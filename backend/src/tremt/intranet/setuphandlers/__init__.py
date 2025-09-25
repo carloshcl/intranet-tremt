@@ -1,4 +1,7 @@
-from Products.CMFPlone.interfaces import INonInstallable
+from plone import api
+from plone.base.interfaces.installable import INonInstallable
+from Products.GenericSetup.tool import SetupTool
+from tremt.intranet import logger
 from zope.interface import implementer
 
 
@@ -15,3 +18,10 @@ class HiddenProfiles:
         return [
             "tremt.intranet.upgrades",
         ]
+
+    def fecha_intranet(portal_setup: SetupTool):
+        """Aplica novo workflow para a intranet."""
+        wf_tool = api.portal.get_tool("portal_workflow")
+        wf_tool.updateRoleMappings()
+        # Loga que modificação foi realizada
+        logger.info("Permissões de workflow atualizadas")
