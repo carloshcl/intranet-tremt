@@ -3,6 +3,7 @@ import { getBaseUrl } from '@plone/volto/helpers/Url/Url';
 import { Container } from '@plone/components';
 import RenderBlocks from '@plone/volto/components/theme/View/RenderBlocks';
 import type { Area } from '../../types/content.ts';
+import ContactInfo from '../ContactInfo/ContactInfo';
 
 interface AreaViewProps {
   content: Area;
@@ -28,6 +29,7 @@ const AreaView: React.FC<AreaViewProps> = (props) => {
           <span>E-mail</span>: <a href={`mailto:${email}`}>{email}</a>
         </Container>
       </Container>
+      <ContactInfo content={content} />
     </Container>
   );
 };
