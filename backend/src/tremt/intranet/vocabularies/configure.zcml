@@ -1,8 +1,14 @@
 <configure xmlns="http://namespaces.zope.org/zope">
-
   <utility
       name="tremt.intranet.vocabulary.estados"
       component=".estados.vocab_estados"
       />
-
+  <utility
+      name="tremt.intranet.vocabulary.cargos"
+      component=".cargos.vocab_cargos"
+      />
+  <utility
+      name="tremt.intranet.vocabulary.areas"
+      component=".areas.vocab_areas"
+      />
 </configure>

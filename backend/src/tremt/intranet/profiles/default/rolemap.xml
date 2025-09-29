@@ -2,14 +2,14 @@
 <rolemap>
   <permissions>
     <permission acquire="False"
-      name="tremt.intranet: Add Area"
+                name="tremt.intranet: Add Area"
     >
 
       <role name="Manager" />
       <role name="Site Administrator" />
     </permission>
     <permission acquire="False"
-      name="tremt.intranet: Add Pessoa"
+                name="tremt.intranet: Add Pessoa"
     >
 
       <role name="Manager" />

@@ -19,7 +19,7 @@ export interface Area extends Content {
   };
 }
 
-  export interface Pessoa extends Content {
+export interface Pessoa extends Content {
   title: string;
   description: string;
   telefone?: string;
