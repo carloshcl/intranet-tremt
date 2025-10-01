@@ -22,6 +22,7 @@ def area_payload() -> dict:
         "telefone": "(61) 3210.1234",
     }
 
+
 @pytest.fixture
 def area(portal, area_payload) -> Area:
     """Create an instance of an Area."""
@@ -105,7 +106,6 @@ class TestArea:
             payload["description"] = ""
             area = api.content.create(container=container, **payload)
         assert area.exclude_from_nav is True
-
 
     def test_subscriber_modified(self, area):
         # Importamos os módulos necessários para disparar o evento de modificação

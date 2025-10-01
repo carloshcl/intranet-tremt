@@ -40,7 +40,7 @@ export default function install(config: ConfigType) {
 
   // Adiciona alguns blocos ao gridBlock
   addBlocksToGridBlock(config, ['climaBlock']);
-  
+
   // Registra Componente para exibir uma Área quando a listagem for de Grade
   config.registerComponent({
     name: 'GridListingItemTemplate',

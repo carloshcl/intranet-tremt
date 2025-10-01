@@ -6,7 +6,7 @@
       handler=".area.added"
       />
 
-      <subscriber
+  <subscriber
       for="tremt.intranet.content.area.IArea
            zope.lifecycleevent.IObjectModifiedEvent"
       handler=".area.modified"
